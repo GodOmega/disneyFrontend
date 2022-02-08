@@ -1,13 +1,5 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: red;
-  }
-`
+import { ThemeProvider } from 'styled-components'
+import GlobalStyle from '../styles/GlobalStyle'
 
 const theme = {
   colors: {
