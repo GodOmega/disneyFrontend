@@ -1,10 +1,16 @@
 import React from "react";
+
+
+
 import MainLayout from "../components/layouts/MainLayout";
+import Slider from '../components/elements/MainSlider';
 const home = () => {
   return (
     <>
       <MainLayout >
-        <h1>Disney plus inicio</h1>
+        <div className="container-w">
+          <Slider />
+        </div>
       </MainLayout>
     </>
   );

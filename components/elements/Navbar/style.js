@@ -9,6 +9,7 @@ export const Nav = styled.nav`
     height: 4.5rem; 
     background-color: #090b13;
     padding: 0 1.875rem;
+    z-index: 100;
 `
 
 export const LogoContainer = styled.picture`

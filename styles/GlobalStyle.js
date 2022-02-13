@@ -8,12 +8,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     padding: 3rem 0 0;
     font-family: 'Roboto', sans-serif;
+    background-color: black;
   }
 
   .container-w{
-    max-width: 1000px;
-    margin: 0 auto;
+    padding: 0 calc(3.5vw + 24px);
+    overflow: hidden;
   }
-  `
+`
 
 export default GlobalStyle

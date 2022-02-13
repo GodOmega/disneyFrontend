@@ -1,6 +1,7 @@
 import React from "react";
 
-import Navbar from '../elements/Navbar';
+import Navbar from '../../elements/Navbar';
+import { Main } from './style'
 
 const MainLayout = ({children}) => {
   return (
@@ -8,7 +9,9 @@ const MainLayout = ({children}) => {
       <header>
         <Navbar />
       </header>
-      {children}
+      <Main>
+        {children}
+      </Main> 
     </>
   );
 };
