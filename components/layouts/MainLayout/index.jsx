@@ -9,7 +9,7 @@ const MainLayout = ({children}) => {
       <header>
         <Navbar />
       </header>
-      <Main>
+      <Main className="container-w">
         {children}
       </Main> 
     </>

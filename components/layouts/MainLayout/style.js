@@ -6,7 +6,7 @@ export const Main = styled.div`
 
     ::before {
         background: url("/images/homeBackground.png") center center / cover no-repeat;
-        position: fixed;
+        position: absolute;
         content: "";
         top: 0;
         right: 0;

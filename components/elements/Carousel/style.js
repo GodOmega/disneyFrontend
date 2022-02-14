@@ -11,8 +11,16 @@ export const Main = styled(Slider)`
         }
     }
 
-    .slick-slide > div {
-        margin: 0 15px;
+    .slick-slide {
+        transition: transform .3s;
+        
+        :hover {
+            transform: scale(1.05);
+        }
+
+        > div {
+            margin: 0 15px;
+        }
     }
 
     @media (max-width: 800px) {
@@ -24,6 +32,7 @@ export const Main = styled(Slider)`
 `
 
 export const Wrap = styled.div`
+
     img {
         cursor: pointer;
         max-width: 100%;
@@ -32,7 +41,7 @@ export const Wrap = styled.div`
         border-radius: 8px;
         transition: border .5s;
         :hover {
-            border: 4px solid rgba(255, 255, 255, .62);
+            border: 4px solid rgba(255, 255, 255, .8);
         }
 
         @media (max-width: 800px) {

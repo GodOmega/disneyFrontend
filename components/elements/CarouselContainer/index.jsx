@@ -5,7 +5,7 @@ import { Section } from './style'
 
 const CarouselContainer = ({title}) => {
   return (
-    <Section className='container-w'>
+    <Section>
         <h4>{title}</h4>
         <Carousel />
     </Section>

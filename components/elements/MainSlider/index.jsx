@@ -10,7 +10,7 @@ import { Main, Wrap } from './style'
 const Slick = () => {
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 200,
     slidesToShow: 1,
