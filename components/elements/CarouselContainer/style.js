@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 export const Section = styled.section`
-    margin-bottom: .5rem;
+    margin-bottom: 2.5rem;
 
     h4 {
         color: #f9f9f9;

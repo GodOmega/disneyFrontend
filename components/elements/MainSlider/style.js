@@ -17,6 +17,43 @@ export const Main = styled(Slider)`
         background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
     }
 
+    .slick-slide.slick-active {
+        > div {
+            > div {
+                ::before {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+            }
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 10px;
+        right: 40px;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            margin-right: 0;
+        }
+
+        li.slick-active {
+            button::before {
+                color: #f9f9f9;
+                opacity: 1;
+            }
+        }
+    }
+
+    .slick-dots button {
+       ::before {
+           font-size:10px;
+           opacity: 1;
+           color: rgb(150, 158, 171);
+       }
+    }
+
     @media (max-width: 700px) {
         .slick-slide > div {
             margin: 0 10px;
@@ -28,6 +65,17 @@ export const Main = styled(Slider)`
 export const Wrap = styled.div`
     position: relative ;
     cursor: pointer;
+
+    ::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    
     ::after {
                 border-radius: 4px;
                 border: 4px solid rgba(255, 255, 255, 0);
@@ -53,4 +101,17 @@ export const Wrap = styled.div`
             /* border: 7px solid rgba(255, 255, 255, .62); */
         }
     }
+`
+
+export const ImageTextWrapper = styled.div `
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    img {
+        max-width: 100%;
+    }
+
 `

@@ -6,4 +6,5 @@ export const CardContainer = styled.section`
     place-content: center flex-start;
     justify-content: flex-start;
     flex-flow: nowrap;
+    margin: 2rem 0 3rem;
 `
