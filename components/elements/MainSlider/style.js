@@ -92,6 +92,10 @@ export const Wrap = styled.div`
         border: 4px solid rgba(255, 255, 255, .5);
     }
 
+    @media (max-width: 800px) {
+        height: 150px;
+    }
+
     img {
         cursor: pointer;
         width: 100%;

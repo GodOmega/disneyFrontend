@@ -47,7 +47,8 @@ export const Wrap = styled.div`
         border-radius: 8px;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
+        height: 90px;
         :hover {
             border: 4px solid transparent;
         }
