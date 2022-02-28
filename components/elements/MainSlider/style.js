@@ -12,14 +12,14 @@ export const Main = styled(Slider)`
         }
     }
 
-    .slick-slide > div {
+    .slick-slide > div {  
         margin: 0 15px;
         background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
     }
 
     .slick-slide.slick-active {
         > div {
-            > div {
+            > div {   
                 ::before {
                     background-color: rgba(0, 0, 0, 0);
                 }
@@ -63,7 +63,9 @@ export const Main = styled(Slider)`
 `
 
 export const Wrap = styled.div`
-    position: relative ;
+    position: relative;
+    width: 100%;
+    height: 300px;
     cursor: pointer;
 
     ::before {
@@ -74,6 +76,7 @@ export const Wrap = styled.div`
         left: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, .5);
+        z-index: 10;
     }
     
     ::after {
@@ -94,12 +97,8 @@ export const Wrap = styled.div`
         width: 100%;
         height: 100%;
         box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-        /* border: 7px solid transparent; */
         border-radius: 4px;
         transition: border .5s;
-        :hover {
-            /* border: 7px solid rgba(255, 255, 255, .62); */
-        }
     }
 `
 

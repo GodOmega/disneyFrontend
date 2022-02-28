@@ -18,7 +18,7 @@ const CardItem = ({image, video}) => {
         <WrapperContainer>
             <PictureContainer>
               <img src={image} alt="" />
-              <video ref={videoRef} loop autoPlay playsInline>
+              <video ref={videoRef} muted loop autoPlay playsInline>
                 <source src={video} />
               </video>
             </PictureContainer>

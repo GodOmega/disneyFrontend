@@ -32,22 +32,24 @@ export const Main = styled(Slider)`
 `
 
 export const Wrap = styled.div`
-
+    position: relative;
+    height: 150px;
+    transition: border .5s;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    :hover {
+            border: 4px solid rgba(255, 255, 255, .8);
+    }
     img {
         cursor: pointer;
         max-width: 100%;
         height: 100%;
-        border: 4px solid transparent;
         border-radius: 8px;
-        transition: border .5s;
-        :hover {
-            border: 4px solid rgba(255, 255, 255, .8);
-        }
+    }
 
-        @media (max-width: 800px) {
-            :hover {
-                border: 4px solid transparent;
-            }
+    @media (max-width: 800px) {
+        :hover {
+            border: 4px solid transparent;
         }
     }
 `

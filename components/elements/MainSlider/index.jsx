@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 // Import css files
 import "slick-carousel/slick/slick.css";
@@ -31,26 +32,28 @@ const Slick = () => {
   };
 
   return (
-    <Main {...settings}>
+    <>
+      <Main {...settings}>
       <Wrap>
-        <img src="/images/imagen-slider.jpg" alt="Images" />
+        <Image src="http://localhost:3000/images/imagen-slider.jpg" layout='fill' />
         <ImageTextWrapper>
           <img src="/images/buenasMigas.png" alt="Images" />
         </ImageTextWrapper>
       </Wrap>
       <Wrap>
-        <img src="/images/imagen-slider-2.jpg" alt="Images" />
+        <Image src="http://localhost:3000/images/imagen-slider-2.jpg" layout='fill' />
         <ImageTextWrapper>
           <img src="/images/hawkeye.png" alt="Images" />
         </ImageTextWrapper>
       </Wrap>
       <Wrap>
-        <img src="/images/images-slider-3.jpg" alt="Images" />
+        <Image src="http://localhost:3000/images/images-slider-3.jpg" layout='fill' />
         <ImageTextWrapper >
           <img src="/images/mandalorian.png" alt="Images" />
         </ImageTextWrapper>
       </Wrap>
-    </Main>
+      </Main>
+    </>
   )
 }
 

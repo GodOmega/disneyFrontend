@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 // Import css files
 import "slick-carousel/slick/slick.css";
@@ -7,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { Main, Wrap } from './style'
 
-const Carousel = ({title}) => {
+const Carousel = () => {
 
   const settings = {
     infinite: false,
@@ -30,28 +31,28 @@ const Carousel = ({title}) => {
     <>
         <Main {...settings}>
             <Wrap>
-                <img src="/images/carousel-1.jpg" alt="Images" />
+                <Image src="http://localhost:3000/images/carousel-1.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <img src="/images/carousel-2.jpg" alt="Images" />
+                <Image src="http://localhost:3000/images/carousel-2.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <img src="/images/carousel-3.jpg" alt="Images" />
+                <Image src="http://localhost:3000/images/carousel-3.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <img src="/images/carousel-4.jpg" alt="Images" />
+                <Image src="http://localhost:3000/images/carousel-4.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <img src="/images/carousel-5.jpg" alt="Images" />
+                <Image src="http://localhost:3000/images/carousel-5.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <img src="/images/carousel-6.jpg" alt="Images" />
+                <Image src="http://localhost:3000/images/carousel-6.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <img src="/images/carousel-7.jpg" alt="Images" />
+                <Image src="http://localhost:3000/images/carousel-7.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <img src="/images/carousel-8.jpg" alt="Images" />
+                <Image src="http://localhost:3000/images/carousel-8.jpg" layout='fill' />
             </Wrap>
         </Main>
     </>
