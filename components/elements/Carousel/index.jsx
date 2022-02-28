@@ -31,28 +31,28 @@ const Carousel = () => {
     <>
         <Main {...settings}>
             <Wrap>
-                <Image src="http://localhost:3000/images/carousel-1.jpg" layout='fill' />
+                <Image src="/images/carousel-1.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <Image src="http://localhost:3000/images/carousel-2.jpg" layout='fill' />
+                <Image src="/images/carousel-2.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <Image src="http://localhost:3000/images/carousel-3.jpg" layout='fill' />
+                <Image src="/images/carousel-3.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <Image src="http://localhost:3000/images/carousel-4.jpg" layout='fill' />
+                <Image src="/images/carousel-4.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <Image src="http://localhost:3000/images/carousel-5.jpg" layout='fill' />
+                <Image src="/images/carousel-5.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <Image src="http://localhost:3000/images/carousel-6.jpg" layout='fill' />
+                <Image src="/images/carousel-6.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <Image src="http://localhost:3000/images/carousel-7.jpg" layout='fill' />
+                <Image src="/images/carousel-7.jpg" layout='fill' />
             </Wrap>
             <Wrap>
-                <Image src="http://localhost:3000/images/carousel-8.jpg" layout='fill' />
+                <Image src="/images/carousel-8.jpg" layout='fill' />
             </Wrap>
         </Main>
     </>
