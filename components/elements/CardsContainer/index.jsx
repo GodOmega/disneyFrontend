@@ -5,12 +5,10 @@ import CardItem from '../CardItem'
 import { CardContainer } from './style'
 
 const CardsContainer = () => {
-  const [isLoding, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleLoading = () => {
-    console.log('false')
     setIsLoading(false);
-    console.log(isLoding)
   }
 
   useEffect(() => {
@@ -18,7 +16,7 @@ const CardsContainer = () => {
     return () => window.removeEventListener("load",handleLoading);
   }, []);
 
-  if(isLoding) {
+  if(isLoading) {
     return ''
   }
 
