@@ -15,7 +15,7 @@ const home = () => {
 
         <Slider />
 
-        {/* <CardsContainer /> */}
+        <CardsContainer />
 
         <CarouselContainer title={"Recomendaciones para ti"} />
         <CarouselContainer title={"Novedades en Disney +"} />

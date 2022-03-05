@@ -1,10 +1,27 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 import CardItem from '../CardItem'
 
 import { CardContainer } from './style'
 
 const CardsContainer = () => {
+  const [isLoding, setIsLoading] = useState(true);
+
+  const handleLoading = () => {
+    console.log('false')
+    setIsLoading(false);
+    console.log(isLoding)
+  }
+
+  useEffect(() => {
+    window.addEventListener("load", handleLoading);
+    return () => window.removeEventListener("load",handleLoading);
+  }, []);
+
+  if(isLoding) {
+    return ''
+  }
+
   return (
     <CardContainer>
       <CardItem image="/images/disneyMiniLogo.png" video="/videos/disney.mp4" />
