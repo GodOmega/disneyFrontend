@@ -12,14 +12,12 @@ const home = () => {
   return (
     <>
       <MainLayout >
-
-        <Slider />
-
-        <CardsContainer />
-
-        <CarouselContainer title={"Recomendaciones para ti"} />
-        <CarouselContainer title={"Novedades en Disney +"} />
-
+        <main>
+          <Slider />
+          <CardsContainer />
+          <CarouselContainer title={"Recomendaciones para ti"} />
+          <CarouselContainer title={"Novedades en Disney +"} />
+        </main>
       </MainLayout>
     </>
   );

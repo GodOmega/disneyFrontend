@@ -11,6 +11,10 @@ export const ItemContainer = styled.div`
     :hover video {
         opacity: 1;
     }
+    
+    @media (max-width: 760px) {
+        width: calc(22% - 20px);
+    }
 `
 
 export const WrapperContainer = styled.div`
@@ -33,6 +37,10 @@ export const WrapperContainer = styled.div`
         bottom: 0;
         left: 0;
         border: 3px solid rgba(249, 249, 249, 0.1);
+
+        @media (max-width: 760px) {
+            border: 2px solid rgba(249, 249, 249, 0.1);
+        }
     }
 
     :hover {

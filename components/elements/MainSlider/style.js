@@ -93,7 +93,7 @@ export const Wrap = styled.div`
     }
 
     @media (max-width: 800px) {
-        height: 150px;
+        height: 130px;
     }
 
     img {
