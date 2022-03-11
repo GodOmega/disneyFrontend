@@ -5,6 +5,8 @@ import DescriptionLayout from "../../components/layouts/DescriptionLayout";
 import {
   DescriptionContainer,
   LogoContainer,
+  InformationContainer,
+  InformationImageContainer,
   PlayContainer,
   Button,
   ButtonElementsContainer,
@@ -21,6 +23,24 @@ const watchElement = () => {
             <img src="/images/bobafett-description-logo.png" alt="" />
           </LogoContainer>
 
+          <InformationContainer>
+            <div>
+              <InformationImageContainer>
+                <picture>
+                    <img src="/images/ageAdvise.png" alt="" />
+                </picture>
+                <picture>
+                    <img src="/images/audioDescription.png" alt="" />
+                </picture>
+                <picture>
+                    <img src="/images/subtitleDescription.png" alt="" />
+                </picture>
+              </InformationImageContainer>
+              <p>2019 - 2020 • 2 temporadas</p>
+            </div>
+            <p>Ciencia ficción, Acción y aventura</p>
+          </InformationContainer>
+    
           <PlayContainer>
             <Button bgColor="#f9f9f9" color="black" wrapper={true}>
               <ButtonElementsContainer>
@@ -37,7 +57,7 @@ const watchElement = () => {
               typeBorder="solid"
               color="#f9f9f9"
               hoverBg="#f9f9f9"
-              hoverColor="#333"
+              hoverColor="black"
               wrapper={true}
             >
               <ButtonElementsContainer>

@@ -24,7 +24,7 @@ export const BackgroundContainer = styled.div`
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    opacity: 1;
+    opacity: ${props => props.opacityBg};
     transition: opacity 200ms ease 0s ;
 
     div {
